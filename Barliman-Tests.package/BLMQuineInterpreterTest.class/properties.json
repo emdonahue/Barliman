@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Barliman-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"interpreter",
+		"x1y2",
+		"x",
+		"y"
+	],
+	"name" : "BLMQuineInterpreterTest",
+	"type" : "normal"
+}

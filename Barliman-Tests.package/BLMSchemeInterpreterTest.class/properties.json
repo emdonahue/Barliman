@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Barliman-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"x",
+		"x1y2",
+		"five",
+		"empty",
+		"lambda42",
+		"lambda51",
+		"recEnv",
+		"reverseLambda"
+	],
+	"name" : "BLMSchemeInterpreterTest",
+	"type" : "normal"
+}

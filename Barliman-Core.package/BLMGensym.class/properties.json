@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Barliman-Core-Gensyms",
+	"classinstvars" : [
+		"tag"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BLMGensym",
+	"type" : "normal"
+}

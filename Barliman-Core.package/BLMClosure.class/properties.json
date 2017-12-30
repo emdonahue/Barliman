@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BLMGensym",
+	"category" : "Barliman-Core-Gensyms",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BLMClosure",
+	"type" : "normal"
+}
