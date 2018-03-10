@@ -10,5 +10,6 @@ apply: anExpr env: anEnv val: aVal
 		carCdrIn: [ :rator :rands | 
 			rands
 				carCdrIn: [ :rand :_ | 
-					(self eval: rator env: anEnv val: (BLMClosure tag cons: params cons: env cons: body cons)) & (self eval: rand env: anEnv val: arg)
+					"Apply"
+					_ isEmptyo & (self eval: rator env: anEnv val: (BLMClosure tag cons: params cons: env cons: body cons)) & (self eval: rand env: anEnv val: arg)
 						& (params carCdrIn: [ :param :_2 | self eval: body env: ((param cons: arg) cons: env) val: aVal ]) ] ]
