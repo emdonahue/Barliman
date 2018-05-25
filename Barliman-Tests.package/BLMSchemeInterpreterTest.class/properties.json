@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "Barliman-Tests",
+	"super" : "Object",
+	"category" : "Barliman-Tests-DEP",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
