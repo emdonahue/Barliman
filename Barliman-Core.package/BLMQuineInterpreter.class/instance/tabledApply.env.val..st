@@ -13,9 +13,11 @@ tabledApply: anExpr env: anEnv val: aVal
 			"Apply"
 			(self eval: rator env: outenv val: (BLMClosure tag cons: params cons: env cons: body cons)) & (self eval: rand env: outenv val: arg)
 				& (params match: #(?) o: [ :param | self eval: body env: ((param cons: arg) cons: env) val: val ]) ]
-				tabled: #apply inputs:
+				tabled: #apply
+				inputs:
 					{aprand.
-					aVal.}
-						outputs:
-							{anEnv.
-							aprator.} ].
+					aVal.
+					anEnv}
+				outputs:
+					{
+					aprator.} ].
