@@ -1,8 +1,9 @@
 as yet unclassified
 untabledApply: anExpr env: anEnv val: aVal
-	| args env body params arg |
+<todo>
+"cons params in the original unify instead of deconstructing it"
+	| env body params arg |
 	params := SKVar new.
-	args := SKVar new.
 	arg := SKVar new.
 	env := SKVar new.
 	body := SKVar new.
