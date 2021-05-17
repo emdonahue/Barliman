@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BLMSimpleInterpreter",
+	"category" : "Barliman-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BLMSimpleInterpreter2",
+	"type" : "normal"
+}
