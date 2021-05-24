@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Barliman-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"interpreter"
+	],
+	"name" : "BLMGuardedInterpreterTest",
+	"type" : "normal"
+}
