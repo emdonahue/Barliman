@@ -1,4 +1,4 @@
-tests
+tests - ground
 testAppend
 	self assert: (interpreter eval: #((lambda (h t) (if (null h) t (car h))) (list) (list (quote 2)))) equals: 2 cons.
 	self assert: (interpreter eval: #((lambda (h t) (if (null h) t (cons (car h) t))) (list (quote 1)) (list (quote 2)))) equals: (1 cons: 2 cons).

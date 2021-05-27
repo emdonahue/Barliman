@@ -1,4 +1,4 @@
-tests
+tests - ground
 testNull
 	self assert: (interpreter eval: #(null (list))) equals: true.
 	self assert: (interpreter eval: #(null (quote 1))) equals: false.
