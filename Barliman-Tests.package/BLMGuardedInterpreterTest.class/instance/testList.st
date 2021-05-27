@@ -1,4 +1,4 @@
-tests
+tests - ground
 testList 	
 	self assert: (interpreter eval: #(list)) equals: Cons empty.
 	self assert: (interpreter eval: #(list (quote 1))) equals: 1 cons.
