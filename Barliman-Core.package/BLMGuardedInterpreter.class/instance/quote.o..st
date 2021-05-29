@@ -1,3 +1,3 @@
 eval
 quote: anExpr o: aValue
-	^ anExpr match2: #(quote _) o: [ :quoted | aValue === quoted ].
+	^ {aValue absento: #closure. aValue =/= true. aValue =/= false. anExpr === (#quote cons: aValue cons)}.

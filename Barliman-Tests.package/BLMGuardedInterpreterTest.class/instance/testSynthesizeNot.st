@@ -1,4 +1,4 @@
 tests - synthesis
-testSynthenizeNot
+testSynthesizeNot
 	self skip.
 	(interpreter synthesize: #((false true) (true false))) inspect.

@@ -1,5 +1,5 @@
-eval
+ui
 eval: anExpr env: anEnv
-	^ [ :o | self eval: anExpr asConsTree env: anEnv o: o ] asGoal run 
+	^ [ :o | self eval: (Cons read: anExpr) env: (Cons read: anEnv) o: o ] asGoal run 
 		ifEmpty: [ nil ] 
 		ifNotEmpty: [ :r | r first first ].
