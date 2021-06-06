@@ -1,6 +1,6 @@
 primitives
 car: anExpr env: anEnv o: aVal
-	^ (anExpr match2: #(car _) o: [ :l |
+	^ (anExpr car: #car listo: [ :l |
 		[ :list |
 			{ self evalPair: l env: anEnv o: list.
 				list carCdro: [ :car :cdr |

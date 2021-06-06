@@ -3,7 +3,7 @@ apply: anExpr env: anEnv o: aVal type: badTypes
 
 "ABBench a: ["
 	^ (anExpr match2: #(apply _ | _) o: [ :rator :rands :closure |
-		{(closure match2: #(closure _ _ _) o: [ :env :args :body | 
+		{(closure car: #closure listo: [ :env :args :body | 
 				[:vals | 
 					{ self argsEval: rands env: anEnv o: vals.
 					[ :ext | 
