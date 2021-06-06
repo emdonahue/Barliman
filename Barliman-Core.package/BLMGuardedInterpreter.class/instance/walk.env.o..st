@@ -1,5 +1,5 @@
-eval
+helpers
 walk: aVar env: anEnv o: aVal
-	^ anEnv match2: #((_ | _) | _) o: [ :var :val :env | "Lookup"
+		^ (anEnv carCdrResto: [ :var :val :env | "Lookup"
 		{{ aVar === var. aVal ===  val }.
-			{ aVar =/= var. self walk: aVar env: env o: aVal }} conde ]. 
+			{ aVar =/= var. self walk: aVar env: env o: aVal }} conde ]) tag: #walk. 

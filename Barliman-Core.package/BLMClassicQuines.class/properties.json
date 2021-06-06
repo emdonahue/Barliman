@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BLMGuardedQuines",
+	"category" : "Barliman-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BLMClassicQuines",
+	"type" : "normal"
+}

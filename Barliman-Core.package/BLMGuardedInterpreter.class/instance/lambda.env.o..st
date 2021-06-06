@@ -1,4 +1,11 @@
-eval
+primitives
 lambda: anExpr env: anEnv o: aVal
-	^ aVal match2: #(closure _ | _) o: [ :env :args_body | "Lambda"
-			{ env === anEnv. anExpr === (#lambda cons: args_body) }].
+	| argbd |
+	"argbd := SKVar tag: #lam_argsbody."
+	"ABBench a: ["
+	^ (aVal match2: #(closure _ | _) o: [ :env :args_body | 
+			{ env === anEnv. anExpr === (#lambda cons: args_body) }]) tag: #lambda.
+		"] b: [
+		^  (SKGuardedPatternedFresh var: aVal pattern: (#closure cons: anEnv cons: argbd) vars: {argbd} block: [ :args_body | 
+			anExpr === (#lambda cons: args_body) ]) tag: #lambda_closure.
+	]"
