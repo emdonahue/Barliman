@@ -8,9 +8,9 @@ untabledApply: anExpr env: anEnv val: aVal
 	env := SKVar new.
 	body := SKVar new.
 	^ anExpr
-		carCdrIn: [ :rator :rands | 
+		carCdro: [ :rator :rands | 
 			rands
-				carCdrIn: [ :rand :_ | 
+				carCdro: [ :rand :_ | 
 					"Apply"
 					_ isEmptyo & (self eval: rator env: anEnv val: (BLMClosure tag cons: params cons: env cons: body cons)) & (self eval: rand env: anEnv val: arg)
-						& (params carCdrIn: [ :param :_2 | self eval: body env: ((param cons: arg) cons: env) val: aVal ]) ] ].
+						& (params carCdro: [ :param :_2 | self eval: body env: ((param cons: arg) cons: env) val: aVal ]) ] ].

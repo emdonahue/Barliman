@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BLMClassicKanren",
+	"super" : "BLMGuardedInterpreter",
 	"category" : "Barliman-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BLMClassicQuines",
+	"name" : "BLMClassicKanren",
 	"type" : "normal"
 }

@@ -1,7 +1,6 @@
 primitives
 cdr: anExpr env: anEnv o: aVal
-	^ (anExpr car: #cdr listo: [ :l |
-		[ :list |
+	^ (anExpr car: #cdr list: 1 o: [ :l :list |
 			{ self evalPair: l env: anEnv o: list.
 				list carCdro: [ :car :cdr |
-					aVal === cdr ] } ] fresh ]) tag: #cdr.
+					aVal === cdr ] } ]) tag: #cdr.

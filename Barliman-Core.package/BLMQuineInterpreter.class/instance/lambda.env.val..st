@@ -5,5 +5,5 @@ lambda: anExpr env: anEnv val: aVal
 	<todo>
 	^ anExpr
 		car: #lambda
-		cdrIn:
-			[ :lambdaExpr | (self not: #lambda inEnvo: anEnv) & (lambdaExpr carCdrIn: [ :args :body | "Lambda" aVal === (BLMClosure tag cons: args cons: anEnv cons: body) ]) ].
+		cdro:
+			[ :lambdaExpr | (self not: #lambda inEnvo: anEnv) & (lambdaExpr carCdro: [ :args :body | "Lambda" aVal === (BLMClosure tag cons: args cons: anEnv cons: body) ]) ].
