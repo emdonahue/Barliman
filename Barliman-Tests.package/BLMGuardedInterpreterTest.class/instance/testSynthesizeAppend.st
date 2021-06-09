@@ -1,4 +1,4 @@
-tests - ground
+tests - synthesis
 testSynthesizeAppend
 	self skip.
 	self assert: (interpreter synthesize: #( (() () ()) (() (1) (1)) ((1) (2) (1 2)) ((1) (2 3) (1 2 3))) constants: #(1 2)) equals: #(if (null _1) _2 (cons (car _1) _2)) asConsTree.

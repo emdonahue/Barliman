@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "BLMInterpreter",
 	"category" : "Barliman-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

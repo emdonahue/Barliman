@@ -5,4 +5,4 @@ if: anExpr env: anEnv o: aVal
 			[ :cond |
 			{ self evalBool: if env: anEnv o: cond.
 			{ {cond === true. self eval: then env: anEnv o: aVal}.
-				{cond === false. self eval: else env: anEnv o: aVal} } conde }]}]) asGoal tag: #if.
+				{cond === false. self eval: else env: anEnv o: aVal} } conde }] asGoal }]) asGoal tag: #if.
