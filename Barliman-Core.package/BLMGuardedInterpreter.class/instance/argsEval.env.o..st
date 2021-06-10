@@ -6,5 +6,4 @@ argsEval: someArgs env: anEnv o: someVals
 				{ self eval: arg env: anEnv o: val.
 					self argsEval: args env: anEnv o: vals } ]) 
 			tag: #argeval_args]) 
-		tag: #argeval_vals} conde 
-	tag: #args_eval.
+		tag: #argeval_vals} conde.

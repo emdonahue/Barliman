@@ -6,4 +6,4 @@ apply: anExpr env: anEnv o: aVal type: badTypes
 		self evalLambda: rator env: anEnv o: (#closure cons: env cons: args cons: body cons).
 		self argsEval: rands env: anEnv o: vals.
 		self extend: ext env: env args: args vals: vals.
-		} ] asGoal.
+		} ] fresh.
