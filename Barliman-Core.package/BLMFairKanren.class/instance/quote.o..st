@@ -1,4 +1,4 @@
 primitives
 quote: anExpr o: aVal
 	^ {aVal absento: #closure.
-		anExpr === (#quote cons: aVal cons)} fresh.
+		anExpr === (#quote cons: aVal cons)} asGoal.
