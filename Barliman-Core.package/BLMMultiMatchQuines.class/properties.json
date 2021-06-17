@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BLMMultiMatchInterpreter",
+	"category" : "Barliman-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BLMMultiMatchQuines",
+	"type" : "normal"
+}
