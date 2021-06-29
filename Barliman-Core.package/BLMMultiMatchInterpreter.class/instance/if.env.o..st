@@ -1,13 +1,21 @@
 primitives
 if: anExpr env: anEnv o: aVal
-	"ABBench a: ["
+	"ABBench a: [
 	^ ({anExpr} match: #((if _ _ _)) o: [ :if :then :else |
-		[ :cond |
+		[ :cond |		
 		{ self evalBool: if env: anEnv o: cond.
 			{ {cond === true. self eval: then env: anEnv o: aVal}.
 				{cond === false. self eval: else env: anEnv o: aVal} } conde } ] fresh
 	 ]) tag: #if.
-	"] b: [
+	] b: ["
+	^ ({anExpr} match: #((if _ _ _)) o: [ :if :then :else |
+		[[ :cond |		
+		{ self evalBool: if env: anEnv o: cond.
+			{ {cond === true. self eval: then env: anEnv o: aVal}.
+				{cond === false. self eval: else env: anEnv o: aVal} } conde } ] fresh ] fresh
+	 ]) tag: #if.
+	"]"
+	"
 	^ ({anExpr} match: #((if _ _ _)) o: [ :if :then :else :cond |
 		{ self evalBool: if env: anEnv o: cond.
 			{ {cond === true. self eval: then env: anEnv o: aVal}.
