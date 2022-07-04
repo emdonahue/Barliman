@@ -1,3 +1,3 @@
 ui
 synthesizeQuines
-	^ [ :quine | self eval: quine o: quine ] asGoal asSpace.
+	^ [ :quine | self eval: quine o: quine ] asGoal runStates.

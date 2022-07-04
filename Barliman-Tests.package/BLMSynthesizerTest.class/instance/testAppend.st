@@ -19,7 +19,7 @@ testAppend
 				cons:
 					(#if cons: ('null?' asSymbol cons: #a cons) cons: x cons: (#cons cons: (#car cons: #a cons) cons: (#append cons: (#cdr cons: #a cons) cons: #b cons) cons) cons)
 						cons) cons.
-	test1 := #(append #(quote #()) #(quote #())) asConsTree.
+	test1 := #(append #(quote #()) #(quote #())) asConsR.
 	value1 := Cons empty.
 	test2 := #append cons: (#list cons: 1 cons) cons: (#list cons: 2 cons) cons.
 	value2 := 1 cons: 2 cons.

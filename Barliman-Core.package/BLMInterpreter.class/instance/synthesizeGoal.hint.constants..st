@@ -1,7 +1,7 @@
 ui
 synthesizeGoal: someExamples hint: aHint constants: someConstants
 	| loopbody |
-	loopbody := {SKVar new. SKVar new. SKVar new. {SKVar new. SKVar new. SKVar new}} asConsTree.
+	loopbody := {SKVar new. SKVar new. SKVar new. {SKVar new. SKVar new. SKVar new}} asConsR.
 	^ [ :program |
 			someExamples inject: 
 				(someConstants inject: ((Cons read: aHint)===program) "& (loopbody===program)" into: [ :g :c | g & (program absento: c) ])

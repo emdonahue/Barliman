@@ -2,7 +2,7 @@ tests-letrec
 testLetrecTwoLambdas
 	| states |
 	states := (BLMSchemeInterpreter new
-		eval: #(letrec #(#(fourtyTwo #(lambda #() 42)) #(fiftyOne #(lambda #() 51))) #(cons #(fourtyTwo) #(fiftyOne))) asConsTree
+		eval: #(letrec #(#(fourtyTwo #(lambda #() 42)) #(fiftyOne #(lambda #() 51))) #(cons #(fourtyTwo) #(fiftyOne))) asConsR
 		out: x) runner runAll.
 	self assert: states size equals: 1.
 	self
