@@ -6,5 +6,5 @@ testNotInEnvo
 	self assert: (interpreter not: #z inEnvo: x1y2) isSuccess.
 	self assert: (interpreter not: 1 inEnvo: x1y2) isSuccess.
 	self assert: (interpreter not: 2 inEnvo: x1y2) isSuccess.
-	self assert: (((interpreter not: x inEnvo: x1y2) & (x === #x)) runtime stream) isFailure.
-	self assert: (((interpreter not: x inEnvo: x1y2) & (x === #z)) runtime stream) isState
+	self assert: (((interpreter not: x inEnvo: x1y2) & (x === #x)) runtime next stream) isFailure.
+	self assert: (((interpreter not: x inEnvo: x1y2) & (x === #z)) runtime next stream) isState
