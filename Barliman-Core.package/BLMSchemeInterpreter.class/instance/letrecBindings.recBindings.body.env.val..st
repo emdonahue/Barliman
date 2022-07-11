@@ -17,4 +17,4 @@ letrecBindings: theBindings recBindings: theRecs body: theBody env: theEnv val: 
 		recBindings: ((pname cons: (#lambda cons: x cons: body cons)) cons: theRecs)
 		body: theBody
 		env: theEnv
-		val: theVal)} ]} asConde
+		val: theVal)} ]} asGoal

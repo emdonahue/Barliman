@@ -13,4 +13,4 @@ lookupRec: aVar bindings: theBindings env: anEnv val: aVal rest: theRest
 		bindings: rest
 		env: anEnv
 		val: aVal
-		rest: theRest)}} asConde} ]} asConde 
+		rest: theRest)}} asGoal} ]} asGoal 

@@ -15,4 +15,4 @@ extend: newEnv env: oldEnv args: argList vals: valList
 		extend: newEnv
 		env: env
 		args: args
-		vals: vals)} ]} asConde
+		vals: vals)} ]} asGoal

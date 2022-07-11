@@ -19,4 +19,4 @@ evalBegin: anExpr definitions: theDefs env: anEnv val: aVal
 		evalBegin: rest
 		definitions: (theDefs add: (name cons: (#lambda cons: args cons: body cons) cons: theDefs))
 		env: anEnv
-		val: aVal)} ]} asConde
+		val: aVal)} ]} asGoal

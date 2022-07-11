@@ -7,4 +7,4 @@ not: primSym inEnvo: anEnv
 			(self not: primSym inEnvo: rest)} ]).
 	[ :bindings :rest | 
 	{(anEnv === ((#rec cons: bindings) cons: rest)).
-	(self not: primSym inRecEnvo: rest bindings: bindings)} ]} asConde
+	(self not: primSym inRecEnvo: rest bindings: bindings)} ]} asGoal

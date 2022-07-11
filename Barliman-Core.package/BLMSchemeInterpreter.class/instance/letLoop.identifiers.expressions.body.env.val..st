@@ -14,4 +14,4 @@ letLoop: bindingPairs identifiers: theIds expressions: theExprs body: aBody env:
 		expressions: (expr cons: theExprs)
 		body: aBody
 		env: anEnv
-		val: aVal)} ]} asConde
+		val: aVal)} ]} asGoal

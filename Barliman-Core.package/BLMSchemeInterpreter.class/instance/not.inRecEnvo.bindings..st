@@ -7,4 +7,4 @@ not: primSym inRecEnvo: anEnv bindings: theBindings
 	(pname =/= primSym).
 	self not: primSym inRecEnvo: anEnv bindings: rest }
 	 ]
-	} asConde
+	} asGoal
