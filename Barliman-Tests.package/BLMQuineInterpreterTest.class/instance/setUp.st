@@ -1,7 +1,7 @@
 initialization
 setUp
-	SKPackage enforceContractC.
-	SKState enforceContractC.
+	SKPackage signContracts.
+	SKState signContracts.
 	x := SKVar new.
 	y := SKVar new.
 	interpreter := BLMQuineInterpreter new.

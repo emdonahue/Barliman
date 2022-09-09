@@ -7,5 +7,5 @@ testSynthesizeQuine
 	lambda := #lambda cons: #x cons cons: list cons.
 	quine := lambda cons: (#quote cons: lambda cons) cons.
 	"self assert: [ :q | interpreter eval: q o: q ] asGoal run first first equals: quine."
-	[ :q | interpreter eval: q o: q ] asGoal run first first inspect.
+	[ :q | interpreter eval: q o: q ] asGoal runList first first inspect.
 	

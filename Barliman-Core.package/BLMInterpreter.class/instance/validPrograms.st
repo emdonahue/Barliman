@@ -1,3 +1,3 @@
 ui
 validPrograms
-	^ self validProgramsGoal run collect: [ :a | a first -> a second ].
+	^ self validProgramsGoal runList collect: [ :a | a first -> a second ].
