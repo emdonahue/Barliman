@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "BLMTestCase",
 	"category" : "Barliman-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
