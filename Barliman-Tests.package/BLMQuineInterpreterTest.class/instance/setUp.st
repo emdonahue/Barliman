@@ -1,7 +1,6 @@
 initialization
 setUp
-	SKPackage signContracts.
-	SKState signContracts.
+	super setUp.
 	x := SKVar new.
 	y := SKVar new.
 	interpreter := BLMQuineInterpreter new.
